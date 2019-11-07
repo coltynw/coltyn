@@ -1,0 +1,202 @@
+body {
+    background-image: url("../images/beef.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.top-content {
+    
+    padding-bottom: 5%;
+
+
+    img {
+        display: none;
+        }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        font-size: 100px;
+        text-align: center;
+        padding-top: 15%;
+        color: white;
+        text-shadow: 10px 5px 5px black;
+        animation-duration: 1s;
+        animation-name: slidein;
+          
+          @keyframes slidein {
+            from {
+              margin-top: 100%; 
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+        }
+    button {
+        padding: 2% 5%;
+        margin: 5% auto;
+        display:block;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 10px 5px 5px black;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0.8;
+        transition: 0.3s;
+        animation-duration: 3s;
+        animation-name: fadeIn;
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 0.8;}
+         } 
+        }
+    button:hover {opacity: 1}
+}
+
+
+
+
+
+.bottom-top {
+    display: flex;
+    margin: 4%;
+    @media @phone{
+        flex-direction: column;
+        }
+
+    img {
+        width: 45%;
+        border-radius: 15px;
+        box-shadow: 10px 10px black;
+        // animation: flyin 1s linear;
+        // @keyframes flyin {
+        // 0%   { 
+        // transform: translateX(200%); 		
+        // }
+        // 100% { 
+        // transform: translateX(0%); 
+        // }
+        // } 
+        @media @phone{
+            margin: 2%;
+            width: 100%;
+            }
+    }
+    div {
+        text-align: center;
+        background-image: url("../images/bg.jpg");
+        border-radius: 15px;
+        width: 45%;
+        margin: 5%;
+        box-shadow: 10px 10px black;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0.8;
+        animation-duration: 3s;
+        animation-name: fadeIn;
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 0.8;}
+         } 
+        @media @phone{
+            margin: 2%;
+            width: 100%;
+            }
+        h2 {
+        font-size: 100%;
+        font-weight:bold;
+        padding: 2% 15%;
+        margin-top: 10%;
+        opacity: 1;
+        @media @phone{
+            margin-top: 2%;
+            }
+        }
+        p {
+        padding: 2% 15%;
+        opacity: 1;
+        line-height: 120%;
+        margin-bottom: 5%; 
+            }
+        }
+    :hover {opacity: 1}
+}
+
+
+.bottom-bottom {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    @media @phone{
+        flex-direction: column;
+        }
+
+
+    img {
+        width: 50%;
+        border-radius: 15px;
+        order: -1;
+        box-shadow: 10px 10px black;
+        // animation: flyin2 1s linear;
+        // @keyframes flyin2 {
+        // 0%   { 
+        // transform: translateX(-200%); 		
+        // }
+        // 100% { 
+        // transform: translateX(0%); 
+        // }
+        // } 
+        
+        @media @phone{
+            width: 100%;
+            margin: 2%;
+            order: 1;
+            }
+        }
+    div {
+        text-align: center;
+        background-image: url("../images/bg.jpg");
+        border-radius: 15px;
+        width: 40%;
+        margin: 5%;
+        box-shadow: 10px 10px black;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0.8;
+        animation-duration: 3s;
+        animation-name: fadeIn;
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 0.8;}
+         } 
+        @media @phone{
+            width: 100%;
+            margin: 2%;
+            order: -1;
+            }
+    
+        h3 {
+        font-size: 100%;
+        font-weight:bold;
+        padding: 2% 15%;
+        margin-top: 10%;
+        opacity: 1;
+        @media @phone{
+            margin-top: 2%;
+            }
+        }
+
+        p {
+        padding: 2% 15%;
+        opacity: 1;
+        line-height: 120%;
+        margin-bottom: 5%;
+            }
+        }
+    :hover {opacity: 1}
+}
+
+

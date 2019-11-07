@@ -1,0 +1,443 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2% 35%;
+  color: #22283B;
+  border-top: none;
+  background: white;
+  opacity: 0.7;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    padding: 1%;
+  }
+}
+nav:hover {
+  opacity: 0.8;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+}
+section .person {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  opacity: 1;
+}
+@media (max-width: 500px) {
+  section .person {
+    margin: 2%;
+  }
+}
+section .big-box {
+  text-align: center;
+  background-image: url("../images/bg.jpg");
+  border-radius: 15px;
+  width: 40%;
+  margin: 5%;
+  box-shadow: 10px 10px black;
+  font-family: 'Montserrat', sans-serif;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.1;
+  }
+}
+@media (max-width: 500px) {
+  section .big-box {
+    margin: 2%;
+    width: 100%;
+  }
+}
+section .big-box h2 {
+  font-size: 200%;
+  font-weight: bold;
+  padding: 2% 15%;
+  opacity: 1;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  section .big-box h2 {
+    margin-top: 2%;
+  }
+}
+section .big-box p {
+  padding: 2% 15%;
+  opacity: 1;
+  line-height: 120%;
+  margin-bottom: 5%;
+}
+section :hover {
+  opacity: 1;
+}
+section .logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+section .github {
+  height: 50px;
+  width: 100px;
+  margin-right: 10%;
+}
+section .linkedin {
+  height: 50px;
+  width: 150px;
+  margin-left: 10%;
+}
+body {
+  background-image: url("../images/beef.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.top-content {
+  padding-bottom: 5%;
+}
+.top-content img {
+  display: none;
+}
+.top-content h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 15%;
+  color: white;
+  text-shadow: 10px 5px 5px black;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.top-content button {
+  padding: 2% 5%;
+  margin: 5% auto;
+  display: block;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px black;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  transition: 0.3s;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.top-content button:hover {
+  opacity: 1;
+}
+.bottom-top {
+  display: flex;
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  .bottom-top {
+    flex-direction: column;
+  }
+}
+.bottom-top img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 10px 10px black;
+}
+@media (max-width: 500px) {
+  .bottom-top img {
+    margin: 2%;
+    width: 100%;
+  }
+}
+.bottom-top div {
+  text-align: center;
+  background-image: url("../images/bg.jpg");
+  border-radius: 15px;
+  width: 45%;
+  margin: 5%;
+  box-shadow: 10px 10px black;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-top div {
+    margin: 2%;
+    width: 100%;
+  }
+}
+.bottom-top div h2 {
+  font-size: 100%;
+  font-weight: bold;
+  padding: 2% 15%;
+  margin-top: 10%;
+  opacity: 1;
+}
+@media (max-width: 500px) {
+  .bottom-top div h2 {
+    margin-top: 2%;
+  }
+}
+.bottom-top div p {
+  padding: 2% 15%;
+  opacity: 1;
+  line-height: 120%;
+  margin-bottom: 5%;
+}
+.bottom-top :hover {
+  opacity: 1;
+}
+.bottom-bottom {
+  display: flex;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .bottom-bottom {
+    flex-direction: column;
+  }
+}
+.bottom-bottom img {
+  width: 50%;
+  border-radius: 15px;
+  order: -1;
+  box-shadow: 10px 10px black;
+}
+@media (max-width: 500px) {
+  .bottom-bottom img {
+    width: 100%;
+    margin: 2%;
+    order: 1;
+  }
+}
+.bottom-bottom div {
+  text-align: center;
+  background-image: url("../images/bg.jpg");
+  border-radius: 15px;
+  width: 40%;
+  margin: 5%;
+  box-shadow: 10px 10px black;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-bottom div {
+    width: 100%;
+    margin: 2%;
+    order: -1;
+  }
+}
+.bottom-bottom div h3 {
+  font-size: 100%;
+  font-weight: bold;
+  padding: 2% 15%;
+  margin-top: 10%;
+  opacity: 1;
+}
+@media (max-width: 500px) {
+  .bottom-bottom div h3 {
+    margin-top: 2%;
+  }
+}
+.bottom-bottom div p {
+  padding: 2% 15%;
+  opacity: 1;
+  line-height: 120%;
+  margin-bottom: 5%;
+}
+.bottom-bottom :hover {
+  opacity: 1;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
+}
+footer:hover {
+  opacity: 0.8;
+}

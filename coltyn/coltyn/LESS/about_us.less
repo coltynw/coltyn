@@ -1,0 +1,78 @@
+
+// About Us Page styling
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4%;
+    @media @phone{
+        flex-direction: column;
+        }
+
+    .person {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        opacity: 1;
+        @media @phone{
+            margin: 2%;
+            }
+
+
+    
+            
+    }
+    .big-box {
+        text-align: center;
+        background-image: url("../images/bg.jpg");
+        border-radius: 15px;
+        width: 40%;
+        margin: 5%;
+        box-shadow: 10px 10px black;
+        font-family: 'Montserrat', sans-serif;
+        animation-duration: 3s;
+        animation-name: fadeIn;
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1.1;}
+         } 
+        @media @phone{
+            margin: 2%;
+            width: 100%;
+            }
+        h2 {
+        font-size: 200%;
+        font-weight:bold;
+        padding: 2% 15%;
+        opacity: 1;
+        margin-top: 5%;
+        @media @phone{
+            margin-top: 2%;
+            }
+        }
+        p {
+        padding: 2% 15%;
+        opacity: 1;
+        line-height: 120%;
+        margin-bottom: 5%; 
+            }
+        }
+    :hover {opacity: 1}
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .github {
+        height: 50px;
+        width: 100px;
+        margin-right: 10%;
+    }
+    .linkedin{
+        height: 50px;
+        width: 150px;
+        margin-left: 10%;
+    }
+}
+
